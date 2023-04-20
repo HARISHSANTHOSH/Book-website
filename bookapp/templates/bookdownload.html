@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+  <tr>
+
+    <th>Bookname</th>
+    <th>Bookpdf</th>
+
+  </tr>
+ {% for i,j in mylist %}
+  <tr>
+    <td>{{i}}</td>
+    <td><a href="{% static j %}" download>click donw</a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>

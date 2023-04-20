@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+    <input type="text" name="bookname" value="{{bookname}}"><br>
+    <input type="file" name="bookpdf"><br>
+    <img src="{% static bookimage %}" height="200px" width="200px" >
+    <input type="file" name="bookimage"><br>
+    <input type="text" name="author"><br>
+    <input type="date" name="bookdate">
+
+    <button type="submit">Ok</button>
+
+</form>
+
+</body>
+</html>

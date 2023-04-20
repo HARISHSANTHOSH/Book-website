@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="upload" style="height:300px;width:100%;background-color:lightblue;margin-top:30x">
+
+    <form method="post" enctype="multipart/form-data" style="padding-top:10px;padding-left:10px">{% csrf_token %}
+        <label >Bookname</label>
+        <input class=""  type="text" name="bookname"><br><br>
+        <label>Bookpdffile</label>
+        <input type="file" name="bookpdf"><br><br>
+        <label>Bookimage</label>
+        <input type="file" name="bookimage"><br><br>
+        <label>Author</label>
+
+        <input type="text" name="author"><br><br>
+        <label>Bookdate</label>
+        <input type="date" name="bookdate"><br><br>
+
+        <button type="submit" style="width:100px">Upload</button>
+
+    </form>
+
+
+</div>
+
+<div id="display" style="margin-left:40px;margin-top:40px">
+    <table border="1">
+
+       <tr>
+        <th>bookimage</th>
+        <th>bookpdf</th>
+        <th>Download</th>
+
+        <th>bookimage</th>
+        <th>author</th>
+        <th>bookdate</th>
+        <th>Delete</th>
+        <th>Edit</th>
+       </tr>
+        {% for i,j,k,l,m,n in mylist %}
+        <tr>
+
+            <td>{{i}}</td>
+            <td>{{j}}</td>
+            <td><a href="{% static j %}">click</a></td>
+            <td><img  src="{% static k %}" ></td>
+            <td>{{l}}</td>
+            <td>{{m}}</td>
+            <td><a href="http://127.0.0.1:8000/bookapp/bookdelete/{{n}}">Delete</a></td>
+            <td><a href="http://127.0.0.1:8000/bookapp/bookupdate/{{n}}">Edit</a></td>
+
+        </tr>
+        {% endfor %}
+
+
+
+    </table>
+
+</div>
+
+</body>
+</html>

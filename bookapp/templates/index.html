@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/9fe76d5e45.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red store</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="box-shadow: 0 3px 9px 3px rgba(0,0,0,0.1); height: 90px;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+
+        <span class="tex-uppercase  m5-2" style="color: black; font-weight: 800; margin-left: 8px; font-size: 30px;"><img src="{% static 'mysite/images/pp.png' %}" style="width:50px;height:50px"> BookMagic</span>
+
+
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <li class="nav-item dropdown" style="list-style-type: none;position: absolute;left: 1050px;">
+          <a class="nav-link dropdown-toggle" href="#" style="color: black; margin-left: 20px;" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i style="color: rgb(253, 253, 253);border: 1px solid rgb(223, 6, 6);padding: 6px;border-radius: 25px;background-color: red;" class="fa-solid fa-user"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+            <li><a class="dropdown-item" href="#" style="border-bottom: 1px solid lightgrey;font-weight:500;border-radius:50px;">Shop Register</a></li>
+            <li><a class="dropdown-item" href="#"  style="border-bottom: 1px solid lightgrey;font-weight:500;border-radius:50px;">Shop Login</a></li>
+            <li><a class="dropdown-item" href="#"  style="border-bottom: 1px solid lightgrey;font-weight:500;border-radius:50px;">User Register</a></li>
+            <li><a class="dropdown-item" href="#"  style="border-bottom: 1px solid lightgrey;font-weight:500;border-radius:50px;">User Login</a></li>
+
+          </ul>
+        </li>
+
+
+
+        <form class="d-flex">
+          <input class="form-control me-2 mt-2 shadow shadow-1px" type="search" style="width: 450px;margin-left: 100px;height: 32px;border: 1px solid red;margin-top: 20px;" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-rgb(239, 243, 177) mt-2" type="submit" style="height: 40px; margin-left:-20px;border-radius:25px;margin-bottom: 20px;position: absolute;left: 790px;top: 18px;"><i style="color: white;margin-bottom: 33px;border: 1px solid red;padding: 7px;background-color: red;" class="fa-solid fa-magnifying-glass"></i></button>
+
+
+
+        </form>
+      </div>
+    </div>
+          <a href="http://127.0.0.1:8000/bookapp/home/" style="margin-right: 166px;"><i style="color: white;border: 1px solid red;padding: 6px;background-color: red;border-radius: 25px;" class="fa-solid fa-home"></i></a>
+  <a href="http://127.0.0.1:8000/bookapp/booklogout/" style="margin-right:50px"><i style="color: white;border: 1px solid red;padding: 6px;background-color: red;border-radius: 25px;" class="fa-solid fa-right-from-bracket"></i></a>
+  </nav>
+
+  <div class="container-fluid" style="width: 100%; height: 90px;background-color: rgb(48, 241, 209);margin-top: 90px;">
+    <h1 style="font-size: 20px; margin-left: 400PX;font-weight: 800;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(211, 50, 50); margin-top: 20px;padding-top: 15px;">SPECIALLY CURATED BOOKS, JUST FOR YOU</h1>
+    <hr style="width: 40%; border: 0; border-bottom: 1px solid #1a198b; margin: 0px auto;">
+    <p style="margin-left: 510px;font-size: 15px;font-weight: 500;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: rgb(26, 9, 9);padding-top: 10px;">BEST-SELLING BOOKS ARE ON SAIL</p>
+  </div>
+
+ <!--end of nav-->
+
+
+
+<div class="container" style="margin-left: 70px;">
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+      <div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+          <img src="{% static 'mysite/images/book 1.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;">
+          <div class="card-body">
+
+
+
+          </div>
+        </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+    <div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+        <img src="{% static 'mysite/images/book 4.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;">
+        <div class="card-body">
+
+
+        </div>
+      </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+      <img src="{% static 'mysite/images/book 3.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;">
+      <div class="card-body">
+
+
+      </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+      <img src="{% static 'mysite/images/book 2.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;">
+      <div class="card-body">
+
+
+      </div>
+    </div>
+</div>
+</div>
+<div class="row" style="margin-top: 50px;">
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+    <div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+        <img src="{% static 'mysite/images/book5.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;">
+        <div class="card-body">
+
+
+        </div>
+      </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+      <a href=""><img src="{% static 'mysite/images/book6.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;"></a>
+      <div class="card-body">
+
+
+      </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+<div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+    <img src="{% static 'mysite/images/book7.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;">
+    <div class="card-body">
+
+
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+<div class="card shadow shadow-5px" style="width: 230px; height: 300px;" id="s">
+    <img src="{% static 'mysite/images/book8.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 230px; height: 300px;">
+    <div class="card-body">
+
+
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<hr style="width: 90%; border: 0; border-bottom: 2px solid #110e0e; margin: 50px auto; margin-left: 40px;">
+<div class="header" style="margin-top: 30px; width: 100%;">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <a href=""> <img src="{% static 'mysite/images/book main3.jpg' %}" class=" " alt="..." style="width: 80%; height: 400px;margin-left: 130px;"></a>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'mysite/images/book main 4.jpg' %}" class="d-block " alt="..." style="width: 80%; height: 400px;margin-left: 130px;">
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: red;"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: red;"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+</div>
+<hr style="width: 90%; border: 0; border-bottom: 2px solid #110e0e; margin: 50px auto; margin-left: 40px;">
+<div class="container" style="margin-top: 70px; margin-left: 120px;">
+  <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; font-weight: 400;font-size: 33px; margin-left: 70px;">Best Sellers</h1>
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+      <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+          <img src="{% static 'mysite/images/bk-1.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+          <div class="card-body">
+            <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">It Ends with us</p>
+             <p style="margin-left: 18px;color: red;font-weight: 500;">₹274</p>
+             <p style="margin-top: -38px;margin-left: 64px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹499</p>
+
+          </div>
+        </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+    <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+        <img src="{% static 'mysite/images/bk-2.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+        <div class="card-body">
+          <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Time Table thick</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹74</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹35</p>
+
+        </div>
+      </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+      <img src="{% static 'mysite/images/bk-3.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+      <div class="card-body">
+                  <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Atomic HabitS</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹374</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹535</p>
+
+
+      </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+      <img src="{% static 'mysite/images/bk-4.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+      <div class="card-body">
+                  <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">It Start With Us </p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹554</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹735</p>
+
+
+      </div>
+    </div>
+</div>
+<div class="row" style="margin-top: 130px;">
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+    <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+        <img src="{% static 'mysite/images/bk-5.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+        <div class="card-body">
+                    <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Psycology Of Money</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹384</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹135</p>
+
+
+        </div>
+      </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+      <img src="{% static 'mysite/images/bk-6.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+      <div class="card-body">
+                            <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Do It Today</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹294</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹535</p>
+
+      </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+<div class="card shadow shadow-5px" style="width: 160px; height: 200px; margin-left: 10px;" id="s">
+    <img src="{% static 'mysite/images/bk-7.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px; ">
+    <div class="card-body">
+                <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Life Amazing secret</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹174</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹235</p>
+
+
+    </div>
+  </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+<div class="card shadow shadow-5px" style="width: 160px; height: 200px;  margin-left: 19px;" id="s">
+    <img src="{% static 'mysite/images/bk-8.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+    <div class="card-body">
+                <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">My First Library</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹204</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹435</p>
+
+
+    </div>
+  </div>
+</div>
+
+</div>
+<hr style="width: 90%; border: 0; border-bottom: 1px solid #ccc; margin-top: 150px;">
+<div class="container">
+  <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 500;margin-top: 20px;">International Best seller</h1>
+   <div class="row" style="margin-top: 50px;">
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+      <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+          <img src="{% static 'mysite/images/bk-9.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+          <div class="card-body">
+            <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Rich Dad poor Dad</p>
+             <p style="margin-left: 18px;color: red;font-weight: 500;">₹274</p>
+             <p style="margin-top: -38px;margin-left: 64px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹499</p>
+
+          </div>
+        </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+    <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+        <img src="{% static 'mysite/images/bk-10.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+        <div class="card-body">
+          <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Atlas of vascular</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹74</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹35</p>
+
+        </div>
+      </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+      <img src="{% static 'mysite/images/bk-11.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+      <div class="card-body">
+                  <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">The 48 Laws of power</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹374</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹535</p>
+
+
+      </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+      <img src="{% static 'mysite/images/bk-12.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+      <div class="card-body">
+                  <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">The love hypothesis </p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹554</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹735</p>
+
+
+      </div>
+    </div>
+</div>
+ <div class="row" style="margin-top: 130px;">
+    <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+      <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+          <img src="{% static 'mysite/images/bk-13.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+          <div class="card-body">
+            <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">A Man called ove</p>
+             <p style="margin-left: 18px;color: red;font-weight: 500;">₹274</p>
+             <p style="margin-top: -38px;margin-left: 64px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹499</p>
+
+          </div>
+        </div>
+  </div>
+  <div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+    <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+        <img src="{% static 'mysite/images/bk-14.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+        <div class="card-body">
+          <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Kiran Ctt waal</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹74</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹35</p>
+
+        </div>
+      </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+      <img src="{% static 'mysite/images/bk-15.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+      <div class="card-body">
+                  <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">Nauruto vol1</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹374</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹535</p>
+
+
+      </div>
+    </div>
+</div>
+<div class="col-md-6 col-lg-4 col-xl-3 p-2 ">
+  <div class="card shadow shadow-5px" style="width: 160px; height: 200px;" id="s">
+      <img src="{% static 'mysite/images/bk-16.jpg' %}" class="card-img-top" alt="..." style="padding-top: 0px; width: 160px; height: 230px;">
+      <div class="card-body">
+                  <p style="font-weight: 500; font-size: 15px;margin-left: 14px;margin-top: -8px;color: rgb(92, 91, 91);">The Orginal Rider</p>
+                   <p style="margin-left: 21px;color: red;font-weight: 500;">₹554</p>
+             <p style="margin-top: -38px;margin-left: 68px;font-weight: 400; font-size: 13px;text-decoration: line-through;">₹735</p>
+
+
+      </div>
+    </div>
+</div>
+</div>
+<hr style="width: 90%; border: 0; border-bottom: 2px solid #4e4b4b; margin-top: 150px;">
+<div class="container" style="width: 1200px;height: 250px;background-color: rgb(211, 203, 203); margin-left: -40px;">
+  <h1 style="font-size: 27px; margin-left: 450px; margin-top: 15px;color: rgb(194, 22, 22);font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Featured Author</h1>
+  <img src="{% static 'mysite/images/auth1.jpg' %}" alt="" style="margin-left: 50px;margin-top: 20px;width: 120px;height: 120px;border-radius: 80px;">
+   <img src="{% static 'mysite/images/auth2.jpg' %}" alt="" style="margin-left: 50px;margin-top: 20px;width: 120px;height: 120px;border-radius: 80px;">
+    <img src="{% static 'mysite/images/auth3.jpg' %}" alt="" style="margin-left: 50px;margin-top: 20px;width: 120px;height: 120px;border-radius: 80px;">
+     <img src="{% static 'mysite/images/auth4.jpg' %}" alt="" style="margin-left: 50px;margin-top: 20px;width: 120px;height: 120px;border-radius: 80px;">
+      <img src="{% static 'mysite/images/auth5.jpg' %}" alt="" style="margin-left: 50px;margin-top: 20px;width: 120px;height: 120px;border-radius: 80px;">
+       <img src="{% static 'mysite/images/auth6.jpg' %}" alt="" style="margin-left: 50px;margin-top: 20px;width: 120px;height: 120px;border-radius: 80px;">
+
+</div>
+<hr style="width: 100%; border: 0; border-bottom: 1px solid #535050; margin-top: 50px;margin-left: -40px;">
+<div class="footer" style="margin-top: 30px;">
+
+  <h1 style="font-size: 17px;color: red;font-weight: 500;margin-left: 60px;">Company</h1>
+  <ul>
+    <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">About Us</a></li>
+        <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Career</a></li>
+            <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Blog</a></li>
+                <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Contact Us</a></li>
+  </ul>
+  <h1  style="font-size: 17px;color: red;font-weight: 500;margin-left: 330px;margin-top: -137px;">Polices</h1>
+  <ul style="margin-left: 268px;">
+    <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">About Us</a></li>
+        <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Career</a></li>
+            <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Blog</a></li>
+                <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Contact Us</a></li>
+  </ul>
+ <h1  style="font-size: 17px;color: red;font-weight: 500;margin-left: 600px;margin-top: -137px;">Help</h1>
+ <ul style="margin-left: 538px;">
+    <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Payment</a></li>
+        <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Shipping</a></li>
+            <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Return</a></li>
+                <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">FAQ</a></li>
+  </ul>
+   <h1  style="font-size: 17px;color: red;font-weight: 500;margin-left: 860px;margin-top: -137px;">Misc</h1>
+    <ul style="margin-left: 798px;">
+    <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Affilate</a></li>
+        <li style="list-style: none;"><a href="#" style="text-decoration: none;list-style: none;list-style-type: none;color: black;margin-left: 30px;font-size: 14px;">Sitemap</a></li>
+
+  </ul>
+<div class="container" style="margin-top: 70px;margin-left: 290px;">
+        <a href="#" style="margin-left: 10px;margin-bottom: -140px;"><i style="font-size:20px ;border: 1px solid rgb(7, 74, 175);padding: 5px;color: white;background-color: blue;border-radius: 50px;" class="fa-brands fa-facebook"></i></a>
+    <a href="#" style="margin-left: 10px;margin-bottom: -140px;"><i style="font-size:20px ;border: 1px solid blue;padding: 5px;color: white;background-color: blue;border-radius: 50px;" class="fa-brands fa-twitter"></i></a>
+        <a href="#" style="margin-left: 10px;margin-bottom: -140px;"><i style="font-size:20px ;border: 1px solid blue;padding: 5px;color: white;background-color: blue;border-radius: 50px;" class="fa-brands fa-linkedin"></i></a>
+            <a href="#" style="margin-left: 10px;margin-bottom: -140px;"><i style="font-size:20px ;border: 1px solid blue;padding: 5px;color: white;background-color: blue;border-radius: 50px;" class="fa-brands fa-instagram"></i></a>
+                <a href="#" style="margin-left: 10px;margin-bottom: -140px;"><i style="font-size:20px ;border: 1px solid blue;padding: 5px;color: white;background-color: blue;border-radius: 50px;" class="fa-brands fa-youtube"></i></a>
+</div>
+</div>
+<hr style="width: 50%; border: 0; border-bottom: 1px solid #535050; margin-top: 50px;margin-left: 200px;">
+</body>
+</html>
